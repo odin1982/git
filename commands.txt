@@ -17,3 +17,9 @@ $ git add [namefile]                                    --> tracking file
 
 $ git diff						--> muestra diferencias mas especificas de los archivos modificados
 
+$ git commit -m "[mensaje]"				--> Haces commit con mensaje a tus cambios
+$ git commit -a -m "[mensaje]"				--> En un solo paso agregas todos tus archivos en Stage area y les haces commit
+
+$ rm [nombre o ruta archivo]				--> Borra archivo
+$ git rm -f [nombre-archivo]				--> Borra archivo y si esta en staged tambien lo borra
+$ git rm --cached [nombre-archivo]			--> Quita el archivo de STAGE area y lo regresa a untracked files
