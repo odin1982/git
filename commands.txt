@@ -4,9 +4,16 @@ $ git config --global user.email johndoe@example.com    --> add your identity us
 $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"  --> Add your default editor, config your editor
 $ git config --global init.defaultBranch [name-branch]  --> config your default branch
 $ git config --list                                     --> checking your settings
+
 $ git init                                              --> initialize git repository
+
 $ git clone [url-repository]                            --> clone repository
                                                         $ git clone [url-repository] https://github.com/libgit2/libgit2
+
 $ git status                                            --> check the status of your files
+$ git status -s						--> show short status files
+
 $ git add [namefile]                                    --> tracking file
+
+$ git diff						--> muestra diferencias mas especificas de los archivos modificados
 
