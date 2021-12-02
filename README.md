@@ -1,3 +1,3 @@
 # git
 ## avance
-Commiting your changes pag 36
+Commiting your changes pag 43
