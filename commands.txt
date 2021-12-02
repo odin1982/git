@@ -18,8 +18,18 @@ $ git add [namefile]                                    --> tracking file
 $ git diff						--> muestra diferencias mas especificas de los archivos modificados
 
 $ git commit -m "[mensaje]"				--> Haces commit con mensaje a tus cambios
-$ git commit -a -m "[mensaje]"				--> En un solo paso agregas todos tus archivos en Stage area y les haces commit
+$ git commit -a -m "[mensaje]"				--> Skipping the stage areaEn un solo paso agregas todos tus archivos en Stage area y les haces commit
 
 $ rm [nombre o ruta archivo]				--> Borra archivo
 $ git rm -f [nombre-archivo]				--> Borra archivo y si esta en staged tambien lo borra
 $ git rm --cached [nombre-archivo]			--> Quita el archivo de STAGE area y lo regresa a untracked files
+
+# moving files
+$ git mv [file_from] [file_to]
+
+# viewing the commit history
+$ git log	--> Show the commit history
+$ git log -p	--> Muestra la lista de commits con las diferencias
+$ git log -p -[numero-commits-mostrar]	-> Muestra un numero determinado de commits con las diferencias realizadas
+	$git log -p -2
+$ git log --status		--> Muestra lista de commits con las estadisticas	
