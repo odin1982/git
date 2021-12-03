@@ -13,11 +13,11 @@ $ git clone [url-repository]                            --> clone repository
 $ git status                                            --> check the status of your files
 $ git status -s						--> show short status files
 
-$ git add [namefile]                                    --> tracking file
+$ git add [namefile]                        --> tracking file
 
-$ git diff						--> muestra diferencias mas especificas de los archivos modificados
+$ git diff									--> muestra diferencias mas especificas de los archivos modificados
 
-$ git commit -m "[mensaje]"				--> Haces commit con mensaje a tus cambios
+$ git commit -m "[mensaje]"					--> Haces commit con mensaje a tus cambios
 $ git commit -a -m "[mensaje]"				--> Skipping the stage areaEn un solo paso agregas todos tus archivos en Stage area y les haces commit
 
 $ rm [nombre o ruta archivo]				--> Borra archivo
@@ -28,8 +28,9 @@ $ git rm --cached [nombre-archivo]			--> Quita el archivo de STAGE area y lo reg
 $ git mv [file_from] [file_to]
 
 # viewing the commit history
-$ git log	--> Show the commit history
-$ git log -p	--> Muestra la lista de commits con las diferencias
-$ git log -p -[numero-commits-mostrar]	-> Muestra un numero determinado de commits con las diferencias realizadas
+$ git log									--> Show the commit history
+$ git log -p								--> Muestra la lista de commits con las diferencias
+$ git log -p -[numero-commits-mostrar]		--> Muestra un numero determinado de commits con las diferencias realizadas
 	$git log -p -2
-$ git log --status		--> Muestra lista de commits con las estadisticas	
+$ git log --stat							--> Muestra lista de commits con las estadisticas
+$ git log --pretty=oneline					--> Muestra la vista de commits de una forma mas elegenate y sencilla
