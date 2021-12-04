@@ -1,4 +1,4 @@
-$ git config --list --show-origin   --> view all of your settings
+$    --> view all of your settings
 $ git config --global user.name "John Doe"              --> add your identity username to git
 $ git config --global user.email johndoe@example.com    --> add your identity user email to git
 $ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"  --> Add your default editor, config your editor
@@ -34,3 +34,14 @@ $ git log -p -[numero-commits-mostrar]		--> Muestra un numero determinado de com
 	$git log -p -2
 $ git log --stat							--> Muestra lista de commits con las estadisticas
 $ git log --pretty=oneline					--> Muestra la vista de commits de una forma mas elegenate y sencilla
+$ git log --since=2.weeks					--> logs de hace dos semanas
+	$ git log --since="2021-11-12"
+$ git log --author=[author]					--> logs por nombre de author
+$ git log --grep=[cadena a buscar]			--> busca en los mensajes de los commits la palabra indicada
+
+#UNSTAGING A STAGED FILE
+$ git reset HEAD [nombre-archivo]			--> send stage file to unstaged area, mejor usar el comando de abajo
+git restore --staged [nombre-archivo]		--> send stage fiel to unstaged area
+
+UNMODIFYING A MODIFIED FILE
+git checkout -- CONTRIBUTING.md				--> unmodifying a modified file
