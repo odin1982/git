@@ -39,6 +39,8 @@ $ git log --since=2.weeks					--> logs de hace dos semanas
 $ git log --author=[author]					--> logs por nombre de author
 $ git log --grep=[cadena a buscar]			--> busca en los mensajes de los commits la palabra indicada
 $ git log -1 HEAD							--> el ultimo commit
+$ git log --oneline --decorate				--> muestra la historia de commits
+$ git log --oneline --decorate --graph --all	--> history of your commits
 
 # UNSTAGING A STAGED FILE
 $ git reset HEAD [nombre-archivo]			--> send stage file to unstaged area, mejor usar el comando de abajo
@@ -64,3 +66,6 @@ $ git push origin --delete [tagname]			--> 2da forma de borrar tag remoto
 
 $ git branch [branchName]					--> crea nuevo branch
 $ git checkout [branchName]					--> cambia de branch
+$ git checkout -b [new-branch-name]			-->	create a new branch and switch
+$ git switch [branch-name]					--> switch branch
+$ git switch -c [new-branch-name]			--> create and switch to a new branch(-c or --create flag to create branch)			
