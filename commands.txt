@@ -38,10 +38,29 @@ $ git log --since=2.weeks					--> logs de hace dos semanas
 	$ git log --since="2021-11-12"
 $ git log --author=[author]					--> logs por nombre de author
 $ git log --grep=[cadena a buscar]			--> busca en los mensajes de los commits la palabra indicada
+$ git log -1 HEAD							--> el ultimo commit
 
-#UNSTAGING A STAGED FILE
+# UNSTAGING A STAGED FILE
 $ git reset HEAD [nombre-archivo]			--> send stage file to unstaged area, mejor usar el comando de abajo
 git restore --staged [nombre-archivo]		--> send stage fiel to unstaged area
 
-UNMODIFYING A MODIFIED FILE
+# UNMODIFYING A MODIFIED FILE
 git checkout -- CONTRIBUTING.md				--> unmodifying a modified file
+
+# SHOWING YOUR REMOTES
+$ git remote -v								--> showing remotes
+
+# TAGS
+$ git tag									--> show tags
+$ git tag -a v1.4 -m "my version 1.4"		--> create annotated tag
+$ git push origin [nombre-tag]				--> subir tag al repositorio
+$ git push origin --tags					--> push all tags
+$ git tag -d [name-tag]						--> borra tag
+$ git push [remote] : refs/tags/[tagname]	--> borra tag remoto
+	$ git push origin:refs/tags/v1.4				--> ejemplo borrado de tag
+$ git push origin --delete [tagname]			--> 2da forma de borrar tag remoto
+
+# BRANCH
+
+$ git branch [branchName]					--> crea nuevo branch
+$ git checkout [branchName]					--> cambia de branch
