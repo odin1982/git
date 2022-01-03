@@ -68,4 +68,7 @@ $ git branch [branchName]					--> crea nuevo branch
 $ git checkout [branchName]					--> cambia de branch
 $ git checkout -b [new-branch-name]			-->	create a new branch and switch
 $ git switch [branch-name]					--> switch branch
-$ git switch -c [new-branch-name]			--> create and switch to a new branch(-c or --create flag to create branch)			
+$ git switch -c [new-branch-name]			--> create and switch to a new branch(-c or --create flag to create branch)	
+$ git merge [name-branch]					--> hace merge en el branch en el que estas ubicado con el branch que agregas en la instrucción
+$ git branch -d [name-branch]				-->	delete branch
+		
