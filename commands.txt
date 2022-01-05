@@ -1,0 +1,75 @@
+$    --> view all of your settings
+$ git config --global user.name "John Doe"              --> add your identity username to git
+$ git config --global user.email johndoe@example.com    --> add your identity user email to git
+$ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"  --> Add your default editor, config your editor
+$ git config --global init.defaultBranch [name-branch]  --> config your default branch
+$ git config --list                                     --> checking your settings
+
+$ git init                                              --> initialize git repository
+
+$ git clone [url-repository]                            --> clone repository
+                                                        $ git clone [url-repository] https://github.com/libgit2/libgit2
+
+$ git status                                            --> check the status of your files
+$ git status -s						--> show short status files
+
+$ git add [namefile]                        --> tracking file
+
+$ git diff									--> muestra diferencias mas especificas de los archivos modificados
+
+$ git commit -m "[mensaje]"					--> Haces commit con mensaje a tus cambios
+$ git commit -a -m "[mensaje]"				--> Skipping the stage areaEn un solo paso agregas todos tus archivos en Stage area y les haces commit
+
+$ rm [nombre o ruta archivo]				--> Borra archivo
+$ git rm -f [nombre-archivo]				--> Borra archivo y si esta en staged tambien lo borra
+$ git rm --cached [nombre-archivo]			--> Quita el archivo de STAGE area y lo regresa a untracked files
+
+# moving files
+$ git mv [file_from] [file_to]
+
+# viewing the commit history
+$ git log									--> Show the commit history
+$ git log -p								--> Muestra la lista de commits con las diferencias
+$ git log -p -[numero-commits-mostrar]		--> Muestra un numero determinado de commits con las diferencias realizadas
+	$git log -p -2
+$ git log --stat							--> Muestra lista de commits con las estadisticas
+$ git log --pretty=oneline					--> Muestra la vista de commits de una forma mas elegenate y sencilla
+$ git log --since=2.weeks					--> logs de hace dos semanas
+	$ git log --since="2021-11-12"
+$ git log --author=[author]					--> logs por nombre de author
+$ git log --grep=[cadena a buscar]			--> busca en los mensajes de los commits la palabra indicada
+$ git log -1 HEAD							--> el ultimo commit
+$ git log --oneline --decorate				--> muestra la historia de commits
+$ git log --oneline --decorate --graph --all	--> history of your commits
+
+# UNSTAGING A STAGED FILE
+$ git reset HEAD [nombre-archivo]			--> send stage file to unstaged area, mejor usar el comando de abajo
+git restore --staged [nombre-archivo]		--> send stage fiel to unstaged area
+
+# UNMODIFYING A MODIFIED FILE
+git checkout -- CONTRIBUTING.md				--> unmodifying a modified file
+
+# SHOWING YOUR REMOTES
+$ git remote -v								--> showing remotes
+
+# TAGS
+$ git tag									--> show tags
+$ git tag -a v1.4 -m "my version 1.4"		--> create annotated tag
+$ git push origin [nombre-tag]				--> subir tag al repositorio
+$ git push origin --tags					--> push all tags
+$ git tag -d [name-tag]						--> borra tag
+$ git push [remote] : refs/tags/[tagname]	--> borra tag remoto
+	$ git push origin:refs/tags/v1.4				--> ejemplo borrado de tag
+$ git push origin --delete [tagname]			--> 2da forma de borrar tag remoto
+
+# BRANCH
+$ git branch								--> listing of your current branches
+$ git branch -v1							--> To see the last commit on EACH BRANCH
+$ git branch [branchName]					--> crea nuevo branch
+$ git checkout [branchName]					--> cambia de branch
+$ git checkout -b [new-branch-name]			-->	create a new branch and switch
+$ git switch [branch-name]					--> switch branch
+$ git switch -c [new-branch-name]			--> create and switch to a new branch(-c or --create flag to create branch)	
+$ git merge [name-branch]					--> hace merge en el branch en el que estas ubicado con el branch que agregas en la instrucción
+$ git branch -d [name-branch]				-->	delete branch
+		
