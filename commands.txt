@@ -63,15 +63,24 @@ $ git push [remote] : refs/tags/[tagname]	--> borra tag remoto
 $ git push origin --delete [tagname]			--> 2da forma de borrar tag remoto
 
 # BRANCH
-$ git branch								--> Listing your current branches
-$ git branch -v								--> To see the last commit on EACH branch
-$git branch --merged						--> con que repositorios se ha hecho merge
-$git branch --no-merged						--> con que repositorios no se ha hecho merge
-$ git branch [branchName]					--> crea nuevo branch
-$ git checkout [branchName]					--> cambia de branch
-$ git checkout -b [new-branch-name]			-->	create a new branch and switch
-$ git switch [branch-name]					--> switch branch
-$ git switch -c [new-branch-name]			--> create and switch to a new branch(-c or --create flag to create branch)	
-$ git merge [name-branch]					--> hace merge en el branch en el que estas ubicado con el branch que agregas en la instrucción
-$ git branch -d [name-branch]				-->	delete branch
-$ git branch -D [name-branch]				--> fuerza el borrado del branch		
+$ git branch																	--> Listing your current branches
+$ git branch -v																	--> To see the last commit on EACH branch
+$ git branch --merged															--> con que repositorios se ha hecho merge
+$ git branch --no-merged														--> con que repositorios no se ha hecho merge
+$ git branch [branchName]														--> crea nuevo branch
+$ git checkout [branchName]														--> cambia de branch
+$ git checkout -b [new-branch-name]												-->	create a new branch and switch
+$ git switch [branch-name]														--> switch branch
+$ git switch -c [new-branch-name]												--> create and switch to a new branch(-c or --create flag to create branch)	
+$ git merge [name-branch]														--> hace merge en el branch en el que estas ubicado con el branch que agregas en la instrucción
+$ git branch -d [name-branch]													-->	delete branch
+$ git branch -D [name-branch]													--> fuerza el borrado del branch	
+$ git branch --move [nombre-branch-incorrecto] [nombre-branch-correcto]			--> modifica el nombre del branch de manera local
+
+# BRANCH RENAME REMOTE BRANCH STEPS
+$ git branch --move [nombre-branch-incorrecto] [nombre-branch-correcto]
+$ git push --set-upstream origin [nombre-branch-correcto]
+$ git push origin --delete [nombre-branch-incorrecto]					
+
+
+
