@@ -1,0 +1,20 @@
+git --version       -> Show git version.
+git help            -> Git help.
+    git help [comando]
+    git help commit             -> Ayuda del comando commit
+git config --global user.name   "[user-name]"       -> Configura nombre de usuario
+git config --global user.email  "[user-email]"      -> Configura email de usuario
+git config --global -e          -> Puedes revisar tus configuraciones de usuario,email y alias
+    Tecla "a" para modificar
+    Esc + : + wq!
+        w = grabar
+        q = salir
+        ! = que lo haga inmediatamente
+git init                        -> Inicializa repositorio
+git config --global init.defaultBranch [name]   -> Te asignara el nombre por default de la rama master
+git status                                      -> estatus de tu repositorio
+git add [archivo]                               -> agrega a stage tus cambios
+git add .                                       -> agrega todos tus archivos a stage
+git commit -m "[commit-message]"                -> hace commit a tu repositorio y toma un snapshot hasta ese momento
+git checkout -- .                               -> le indica a Git reconstruye el proyecto al ultimo commit, tus cambios que no tienen seguimiento no se borran
+               
