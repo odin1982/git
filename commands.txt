@@ -65,6 +65,7 @@ $ git push origin --delete [tagname]			--> 2da forma de borrar tag remoto
 # BRANCH
 $ git branch																	--> Listing your current branches
 $ git branch -v																	--> To see the last commit on EACH branch
+$ git branch -vv																--> To see the last commit on EACH branch and show you what remote repository is tracking
 $ git branch --merged															--> con que repositorios se ha hecho merge
 $ git branch --no-merged														--> con que repositorios no se ha hecho merge
 $ git branch [branchName]														--> crea nuevo branch
@@ -80,7 +81,10 @@ $ git branch --move [nombre-branch-incorrecto] [nombre-branch-correcto]			--> mo
 # BRANCH RENAME REMOTE BRANCH STEPS
 $ git branch --move [nombre-branch-incorrecto] [nombre-branch-correcto]
 $ git push --set-upstream origin [nombre-branch-correcto]
-$ git push origin --delete [nombre-branch-incorrecto]					
+$ git push origin --delete [nombre-branch-incorrecto]		
+
+$ git push origin [branch-name]													--> sube tu rama al repositorio remoto
+$ git push origin --delete [remote-branch-name]									--> delete your remote branch			
 
 
 
