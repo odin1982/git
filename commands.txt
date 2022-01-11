@@ -1,7 +1,9 @@
 git --version       -> Show git version.
+
 git help            -> Git help.
-    git help [comando]
-    git help commit             -> Ayuda del comando commit
+git help [comando]	-> Git help 
+git help commit             -> Ayuda del comando commit
+
 git config --global user.name   "[user-name]"       -> Configura nombre de usuario
 git config --global user.email  "[user-email]"      -> Configura email de usuario
 git config --global -e                              -> Puedes revisar tus configuraciones de usuario,email y alias
@@ -19,12 +21,18 @@ git status --short									-> te muestra estatus simplificado
 git add [archivo]                                   -> agrega a stage tus cambios
 git add .                                           -> agrega todos tus archivos a stage
 git add *.[extension]								-> Te agrega todos los archivos con la extension indicada
+
 git commit -m "[commit-message]"                    -> crea registro historico,hace commit a tu repositorio y toma un snapshot hasta ese momento
+git commit -am "[message]"                          -> Agrega todos los archivos untracked y hace el registro del commit(SOLO PARA ARCHIVOS QUE YA SE LES ESTA DANDO SEGUIMIENTO)
+
 git checkout -- .                                   -> le indica a Git reconstruye el proyecto al ultimo commit, tus cambios que no tienen seguimiento no se borran
-git defaultBranch                                   -> Te indica en que rama estas trabajando y que ramas existen localmente
+git branch                                   		-> Te indica en que rama estas trabajando y que ramas existen localmente
 git branch -m [branch-name] [new-branch_name]       -> Cambio de nombre de rama
+
 git reset [file-name]                               -> Cambia the stage a untracked un archivo
-git commit -am "[message]"                          -> Agrega todos los archivos untracked y hace el registro del commit
+git reset --hard [numer-hash]						-> Te ubica en el hash que le indica y elimina todos los commits y cambios despues de ese hash
+git reset --soft [number-hash]						-> Te ubica en el hash indicado sin borrar archivos
+git reset --hard									-> Es parecido a git checkout -- .
 
 git log												-> Muestra log de tus registros
 git log --oneline --decorate --all --graph
@@ -38,3 +46,9 @@ git config --global alias.[alias-name] "[comando]"	-> crea alias para simplifica
 git diff											-> Muestra las diferencias de todos los archivos si es que existen
 git diff --staged									-> Muestra las diferencias pero con los archivos que se encuantran en stage
 git diff -- .										-> Regrega TODOS tus archivos al ultimo commit
+
+git commit --amend -m "[mensaje-corregido]"			-> Corrige el mensaje del ULTIMO commit
+
+git reflog											-> referencia de todo lo que ha sucedido en git
+
+git mv [file-name] [new-file-name]					-> modifica el nombre de un archivo
