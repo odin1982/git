@@ -23,3 +23,17 @@ Carpeta donde git le da seguimiento a tu repositorio
 ## .gitkeep
 Le indicas a Git que le de seguimiento a esa carpeta aunque no tenga archivos o este vacia
 El archivo .gitkeep es solo un archivo dummy para permitir que una carpeta vacía (excepto por ese archivo) se cree al clonar el repositorio, ya que las carpetas vacías no forman parte del control de versiones.
+
+## HEAD
+El HEAD siempre apunta al ultimo commit
+HEAD^   - el techo significa el commit anterior antes del HEAD
+HEAD^[numero-commits-anteriores]
+HEAD^2  - dos commits anteriores  
+
+## git reset
+se usa mucho para viajes en el tiempo
+
+## Quitar error CRLF
+```
+git config core.autocrlf true
+```
