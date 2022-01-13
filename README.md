@@ -37,3 +37,37 @@ se usa mucho para viajes en el tiempo
 ```
 git config core.autocrlf true
 ```
+
+## Branch
+Es una línea de tiempo de commits
+
+            commit inicial   README.md
+Master -----*---------------*--------------
+                            |
+                     Branch  --------------
+
+## Merge 
+Fast Forward            - Cambio transparente sin conflictos
+Uniones Automaticas     
+Union Manual            - git no puede resolver de forma automatica
+
+## Tags - Etiquetas
+Son una referencia a un commit especifico
+       
+Master * -------------------------- * -------------------------- * ---------------------------- * --------
+     Inicio                      Unimos                       Adiciones                    Creamos    
+     Proyecto                   Trabajos                                                el ejecutable
+                                   
+                                   |                                                            |
+                            version_1.0.0                                                   version_1.0.1
+
+
+- Sirven para marcar versiones o releases
+- Pueden ser palabras numeros
+
+v1.0.0
+1 = version mayor
+0 = cierta funcionalidad pero no es una version mayor
+0 = bug fix
+
+
