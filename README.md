@@ -71,3 +71,12 @@ v1.0.0
 0 = bug fix
 
 
+## Stash
+Boveda segura donde se pueden mover todos los cambios, no se recomienda realizar stash.
+
+
+## Rebase
+Permite unir commit separar commits hacer squash renombrar nombres de los commits, se recomienda que se haga local y que no haya impactado en un repositorio remoto.
+
+
+
