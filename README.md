@@ -78,5 +78,47 @@ Boveda segura donde se pueden mover todos los cambios, no se recomienda realizar
 ## Rebase
 Permite unir commit separar commits hacer squash renombrar nombres de los commits, se recomienda que se haga local y que no haya impactado en un repositorio remoto.
 
+Escenario: se tiene la rama MASTER, despues creamos un nuevo branch a ese nuevo branch se le hacen dos commits, pero en el master otra persona hace cambios a la rama master y son necesarios en la segunda rama Misiones Completadas, como le hariamos para actualizar la rama misiones completadas?
+
+                                   |             |
+                                   |             |
+                      Más misiones *             * Mision 2 lista
+                                   |             |
+                      Más heroes   *             * Mision 1 lista
+                                   |             |
+                      Lista        *--------------      Rama misiones completadas
+                                   |
+                      Nuevo plan   *
+                                   Master
+
+
+Necesitamos hacer un rebase.
+
+Lo que hariamos seria lo siguiente:
+- git checkout rama-misiones
+- git rebase master
+
+
+                                   |                * Mision 2 lista
+                                   |                |    
+                                   |                * Mision 1 lista
+                                   |                |    
+                                   |----------------             
+                                   |             
+                      Más misiones *             
+                                   |             
+                      Más heroes   *             
+                                   |             
+                      Lista        *
+                                   |
+                      Nuevo plan   *
+                                   Master
+
+Para que sirve un rebase?
+- Ordenar commits
+- Corregir mensajes de los commits
+- Unir commits
+- Separar commits
+
 
 
