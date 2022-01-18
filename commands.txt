@@ -66,9 +66,21 @@ git tag -a [tag-name] -m "[message]"					-> crea un tag con mensaje incluido
 git tag -a [tag-name] [hash-number]	-m "[message]"		-> crea un tag en un commit especifico
 git tag -d [tag-name]									-> borra tag
 git show [tag-name]										-> Información detallada del tag
+git push --tags											-> sube todos tus tags a remoto o lo que hagan falta
 
 
 git stash												-> Guarda tus archivos en el stash
 git stash pop											-> Trae los cambios del stash
 git stash list											-> Te muestra los stash
 git stash clear											-> borra todos tus stash
+
+
+git remote -v											-> nos muestra las fuentes remotas de nuestro repositorio
+git push -u origin master								-> subir repositorio local al repositorio remoto
+
+git pull
+git pull origin main
+
+git clone [url-github-bitbucket]						-> clona proyecto
+
+git push origin main									-> subir cambios locales a remoto
