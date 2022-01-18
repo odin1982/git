@@ -119,6 +119,48 @@ Para que sirve un rebase?
 - Corregir mensajes de los commits
 - Unir commits
 - Separar commits
+- issues, wikis, estadisticas ilimitadas
+- organiaciones ilimitadas
+- participación gratutita en proyectos privados.
 
+
+## GITHUB
+Es una plataforma de desarrollo colaborativo de software para alojar proyectos.
+- Repositorios ilimitados
+- Paginas HTML,CSS y JS ilimitadas
+- push, pull, clones ilimitados
+
+
+
+Repositorio remoto
+                                                               <- pull Person 1
+Repositorio Local    -> push   ->     repositorio remoto
+                                                               <- pull Person 2
+
+Hosted Services:
+- Bitbucket
+- Github
+
+
+Manejados por nosotros mismos:
+- Gitosis
+
+
+git remote add origin https://hithub.com/Klerith/udemy-heroes.git
+
+- add: nuevo remote
+- origin: el nombre de nuestro remote
+- https://hithub.com/Klerith/udemy-heroes.git: dirección de Github
+
+
+## PULL REQUEST
+Hacer cambios en un repositorio que no nos pertenece
+Una rama rama que se desprendio en un punto del tiempo de la rama principal y luego cuando quieres unir la rama atraves de un pull request, la idea del pull request no es solo hacer el merge y ya, si no el pull request es un analisis previo  de una persona que revisara que el merge se hizo correctamente
+
+## MARKDOWN
+
+tutoriales:
+https://www.markdowntutorial.com/
+https://www.webfx.com/tools/emoji-cheat-sheet/
 
 
