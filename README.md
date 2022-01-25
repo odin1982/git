@@ -1,10 +1,12 @@
 # git
+
 ## REPOSITORIO CENTRAL
 Es cuando los desarrolladores trabajan directamente en un servidor
 
                         <--    Desarrollador_1
 Repositorio Central     <--    Desarrollador_2
                         <--    Desarrollador_3
+
 
 ## REPOSITORIO DISTRIBUIDO
 Es cuando cada desarrollador tiene su propia copia del repositorio
@@ -17,12 +19,15 @@ Repositorio Distribuido     <--    Desarrollador_2 (Respositorio Propio)
 ## --
 El -- significa que en la instrucción va  a venir una palabra completa. 
 
+
 ## .git
 Carpeta donde git le da seguimiento a tu repositorio
+
 
 ## .gitkeep
 Le indicas a Git que le de seguimiento a esa carpeta aunque no tenga archivos o este vacia
 El archivo .gitkeep es solo un archivo dummy para permitir que una carpeta vacía (excepto por ese archivo) se cree al clonar el repositorio, ya que las carpetas vacías no forman parte del control de versiones.
+
 
 ## HEAD
 El HEAD siempre apunta al ultimo commit
@@ -30,15 +35,17 @@ HEAD^   - el techo significa el commit anterior antes del HEAD
 HEAD^[numero-commits-anteriores]
 HEAD^2  - dos commits anteriores  
 
+
 ## git reset
 se usa mucho para viajes en el tiempo
 
-## Quitar error CRLF
+
+## ERROR CRLF
 ```
 git config core.autocrlf true
 ```
 
-## Branch
+## BRANCH
 Es una línea de tiempo de commits
 
             commit inicial   README.md
@@ -46,12 +53,14 @@ Master -----*---------------*--------------
                             |
                      Branch  --------------
 
-## Merge 
+
+## MERGE
 Fast Forward            - Cambio transparente sin conflictos
 Uniones Automaticas     
 Union Manual            - git no puede resolver de forma automatica
 
-## Tags - Etiquetas
+
+## TAGS - ETIQUETAS
 Son una referencia a un commit especifico
        
 Master * -------------------------- * -------------------------- * ---------------------------- * --------
@@ -71,11 +80,11 @@ v1.0.0
 0 = bug fix
 
 
-## Stash
+## STASH
 Boveda segura donde se pueden mover todos los cambios, no se recomienda realizar stash.
 
 
-## Rebase
+## REBASE
 Permite unir commit separar commits hacer squash renombrar nombres de los commits, se recomienda que se haga local y que no haya impactado en un repositorio remoto.
 
 Escenario: se tiene la rama MASTER, despues creamos un nuevo branch a ese nuevo branch se le hacen dos commits, pero en el master otra persona hace cambios a la rama master y son necesarios en la segunda rama Misiones Completadas, como le hariamos para actualizar la rama misiones completadas?
@@ -124,6 +133,7 @@ Para que sirve un rebase?
 - participación gratutita en proyectos privados.
 
 
+
 ## GITHUB
 Es una plataforma de desarrollo colaborativo de software para alojar proyectos.
 - Repositorios ilimitados
@@ -153,9 +163,11 @@ git remote add origin https://hithub.com/Klerith/udemy-heroes.git
 - https://hithub.com/Klerith/udemy-heroes.git: dirección de Github
 
 
+
 ## PULL REQUEST
 Hacer cambios en un repositorio que no nos pertenece
 Una rama rama que se desprendio en un punto del tiempo de la rama principal y luego cuando quieres unir la rama atraves de un pull request, la idea del pull request no es solo hacer el merge y ya, si no el pull request es un analisis previo  de una persona que revisara que el merge se hizo correctamente
+
 
 ## MARKDOWN
 
@@ -163,8 +175,11 @@ tutoriales:
 https://www.markdowntutorial.com/
 https://www.webfx.com/tools/emoji-cheat-sheet/
 
+
+
 ## GIT FETCH
 te muestra los cambios que existen antes de hacer un PULL
+
 
 ## FORK, CLONE Y COLABORACIONES
 ### FORK
@@ -176,7 +191,8 @@ publico en GITHUB         ------- FORK -------    mi-usuario/maps
 google/maps                                       push,clone,commits, total acceso
 
 
-## FLUJO DE TRABAJO
+
+### FLUJO DE TRABAJO
 
 |             |   |
 |             |   |
