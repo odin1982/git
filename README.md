@@ -163,4 +163,50 @@ tutoriales:
 https://www.markdowntutorial.com/
 https://www.webfx.com/tools/emoji-cheat-sheet/
 
+## GIT FETCH
+te muestra los cambios que existen antes de hacer un PULL
+
+## FORK, CLONE Y COLABORACIONES
+### FORK
+
+Tomar el repositorio original y clonarlo a un lugar donde nosotros tenemos total acceso a ese repositorio
+
+repositorio
+publico en GITHUB         ------- FORK -------    mi-usuario/maps                             
+google/maps                                       push,clone,commits, total acceso
+
+
+## FLUJO DE TRABAJO
+
+|             |   |
+|             |   |
+|             |   |
+|             |   |
+|             |   |
+|             |   |
+|             |   |
+|             |   |
+|             |   |
+|             |   |
+*-------------|   |
+|  feature 2      |
+|                 |
+*-----------------|
+|        feature_1 
+|
+master
+
+Como ir a una rama
+git fetch
+git branch -a
+git checkout [branch-name]
+
+Como subir tus cambios
+git checkout master
+git merge [rama-que se le va hacer merge]
+git push
+
+cambios pull request
+git push origin [rama]
+- hacer pull request 
 
