@@ -32,7 +32,10 @@ git branch                                   		-> Te indica en que rama estas tr
 git branch [branch-name]							-> crea una rama
 git branch -m [branch-name] [new-branch_name]       -> Cambio de nombre de rama
 git branch -d [branch-name]							-> Borrar rama
+git branch --all									-> Te muestra todas las ramas tanto remotas como locales
 git checkout -b [branch-name]						-> Crea la rama y te ubica automaticamente en la rama
+git push origin :[remote-branch-name]				-> borra rama remota
+git remote prune origin								-> checa y actualiza estatus de ramas y repositorios, no hace ninguna modificacion
 
 git reset [file-name]                               -> Cambia the stage a untracked un archivo
 git reset --hard [numer-hash]						-> Te ubica en el hash que le indica y elimina todos los commits y cambios despues de ese hash
@@ -80,6 +83,7 @@ git push -u origin master								-> subir repositorio local al repositorio remot
 
 git pull
 git pull origin main
+git pull --all											-> te descarga todos los cambios en todas las ramas
 
 git clone [url-github-bitbucket]						-> clona proyecto
 
