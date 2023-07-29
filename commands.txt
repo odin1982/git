@@ -3,3 +3,8 @@ git init                                    inicializa un repositorio en un dire
 git clone <url>                             clona el repositorio de la <url> especificada
 git clone <url> <new-name-repository>       clona el reposito de la <url> y lo renombra <new-name-repository>
 git status                                  checa el estatus de tus archivos
+git status -s								status de archivos simplificado
+git status --short
+
+git add <name-file-to-tracking>				agrega archivo al stage area
+git restore --staged <file>...				quita del stage area el archivo o archivos mencionados
