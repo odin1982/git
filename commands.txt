@@ -1,10 +1,16 @@
 git --version                               obtiene la version de GIT
 git init                                    inicializa un repositorio en un directorio existente
+
 git clone <url>                             clona el repositorio de la <url> especificada
 git clone <url> <new-name-repository>       clona el reposito de la <url> y lo renombra <new-name-repository>
+
 git status                                  checa el estatus de tus archivos
 git status -s								status de archivos simplificado
 git status --short
 
 git add <name-file-to-tracking>				agrega archivo al stage area
 git restore --staged <file>...				quita del stage area el archivo o archivos mencionados
+
+git diff									compara que hay en tu directorio de trabajo con el staging area
+git diff --staged							si quieres ver que esta en el staged area y los cambios que se subiran en tu siguiente commit
+git diff --cached							hace lo mismo que git diff --staged
