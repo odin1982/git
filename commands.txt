@@ -14,3 +14,71 @@ git restore --staged <file>...				quita del stage area el archivo o archivos men
 git diff									compara que hay en tu directorio de trabajo con el staging area
 git diff --staged							si quieres ver que esta en el staged area y los cambios que se subiran en tu siguiente commit
 git diff --cached							hace lo mismo que git diff --staged
+
+git commit									Realiza commit de los archivos que se encuentren en el staging area
+git commit -a -m '<mensaje>'				agrega archivos a staging area y les hace commit en un solo paso
+git commit --amend							Puedes modificar el mensaje del ultimo commit
+
+git rm <nombre-archivo>						elimina archivo y lo agrega al staging area y lo elimina del working area
+git rm --cached <nombre-archivo>			elimina el archivo del statging area y lo deja untracked en el working area
+
+git mv <file_from> <file_to>				Cambia el nombre del archivo
+
+git log
+git log -p -<numero de commits>				Muestra el <numero de commits> commits		
+git log --stat								Muestra estadisticas abreviadas de los commits
+git log --pretty=oneline
+git log --pretty=format:"%h - %an, %ar : %s"
+git log -<numero>							Muestra el <numero> de commits anteriores
+git log --since=<numero>.weeks				Muestra los commits de hace <numero> de semanas
+git log --author=<name>						Muestra commits del nombre del author
+git log --oneline --decorate				Otra forma de usar y ver el git log
+git log --oneline --decorate --graph --all	Otra forma de usar y ver el log de commits
+
+git restore --staged <archivo>				Quita del staging area un archivo(new way)
+
+git reset HEAD <archivo>					Quita del staging area un archivo(old way)
+
+git remote									Muestra que servidores remotos has configurado
+git remote -v								Muestra que servidores remotos has configurado con su URL
+git remote add <shortname> <url>			Agrega repositorios remotos	
+git remote show <remote-repo>				Muestra informacion acerca de un remoto en particular
+
+git push <remote> <branch>					Sube cambios de tu repositorio
+
+git tag										Muestra los tags del repositorio
+git tag -l "<string>"						Muestra los tags con coincidencia del string
+git tag -a <tagname> -m "<tagdescription>"	crea un annotated tag
+git show <tag>								Muestra la informacion del tag
+git tag <tagname>							se crea un lightweigt tag 											
+git tag -a <tagname> <specific-commit>		crea un tag en un commit especifico
+git push origin <tagname>					Subo a un repositorio remoto el tag
+git push origin --tags						Sube todos los tags al repo remoto
+git tag -d <tagname>						Elimina un tag
+git push origin --delete <tagname>			Borrar un tag remoto
+
+
+git branch <branchname>						Creas un nuevo branch
+git checkout <branchname>					Te posicionas en el branch escrito
+git checkout -b <newbranchname>				Crea un branch y te posiciona en el
+git switch <branchname>						Te posicionas en el branch escrito
+git switch -c <newBranchName>				Crea un branch y te posiciona en el
+git switch -								Te retorna al branch previo
+
+git merge <branchName>						Hace merge en el branch en el que estas posicionado con el branch que le indicas
+git branch -d <branchName>					Borra el branch indicado
+git branch									Lista todos los branch
+git branch -v								Muestra el ultimo commit de cada branch
+git branch --merged							Sirve para ver que branches han sido mergeados con la rama actual
+git branch --no-merged						Sirve para ver todos los branches que aun no has mergeado
+git branch --move <bad-branch-name> <correct-branch-name> Modifica el nombre del branch LOCALMENTE
+
+----------- modifica branch remoto ---------------------
+git branch --move <bad-branch-name> <corrected-branch-name>
+git push --set-upstream origin <corrected-branch-name>
+git push origin --delete <bad-branch-name> 
+
+--------------------------------------------------------
+
+
+git push origin --delete <remoteBranch>		Borra un repositorio remoto
