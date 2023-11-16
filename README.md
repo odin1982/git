@@ -23,6 +23,6 @@ caso 2: Borrandolo con git rm <nombre-archivo>
 La diferencia es que git fetch trae todos los cambios que no tienes pero no les hace merge y git pull si les hace merge
 
 
+hola
 
-
-avance: Generating Your SSH Public Key <112> page 112
+avance: Private Small Team <166> page 166

@@ -14,6 +14,7 @@ git restore --staged <file>...				quita del stage area el archivo o archivos men
 git diff									compara que hay en tu directorio de trabajo con el staging area
 git diff --staged							si quieres ver que esta en el staged area y los cambios que se subiran en tu siguiente commit
 git diff --cached							hace lo mismo que git diff --staged
+git diff --check							revisa que no tengas errores de espacio en tu codigo
 
 git commit									Realiza commit de los archivos que se encuentren en el staging area
 git commit -a -m '<mensaje>'				agrega archivos a staging area y les hace commit en un solo paso
