@@ -1,4 +1,20 @@
 # git
+Sistema de control de versiones
+
+Existen dos sistemas de versiones:
+* centralizado
+* distribuido
+
+## Sistema de versiones centralizado
+Todos los desarrolladores se conectan a una misma maquina para almacenar el codigo, una de las desventajas es que si el servidor deja de funcionar nadie va  apoder realizar cambios.
+
+Un ejemplo seria subversion
+
+## Sistema de versiones distribuido
+Todos los desarrolladores cuentan con el historial del proyecto y si quieren sincronizar sus cambios lo pueden hacer sin necesidad de un servidor, y si el servidor deja de funcionar los desarrolladores pueden seguir trabajando.
+
+
+
 ## configuring name git
 git config --global user.name                           informa el nombre de usuario de git
 git config --global user.name "odin"                    setea tu nombre de ususario en git
