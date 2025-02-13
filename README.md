@@ -13,6 +13,27 @@ Un ejemplo seria subversion
 ## Sistema de versiones distribuido
 Todos los desarrolladores cuentan con el historial del proyecto y si quieren sincronizar sus cambios lo pueden hacer sin necesidad de un servidor, y si el servidor deja de funcionar los desarrolladores pueden seguir trabajando.
 
+## Configuracion de GIT
+* Sistema
+* Global
+* Local
+
+Nombre de usuario
+Correo
+Editor
+
+Para abrir el archivo de configuracion de GIT usar la siguiente instrucción:
+```
+git config --global -e
+```
+
+## Navegar en los menus de ayuda de GIT
+Letra J -> bajar
+letra K -> subir
+letra Q -> salir
+
+
+
 
 
 ## configuring name git
