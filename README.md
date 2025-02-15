@@ -32,6 +32,23 @@ Letra J -> bajar
 letra K -> subir
 letra Q -> salir
 
+## Eliminando archivos en git
+* Con comando del shell o terminal
+´´´
+> rm <archivo>
+> git add
+> git commit -m "<mensaje>"
+´´´
+
+* Con instruccion de git (te ahorras el git add)
+´´´
+> rm <archivo>
+> git commit -m "<mensaje>"
+´´´
+
+
+
+
 
 
 
