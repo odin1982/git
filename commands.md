@@ -19,6 +19,10 @@ git log --abbrev-commit                                 te muestra los commits c
 git log --oneline                                       te muestra los commits abreviados
 git commit --amend "<message>"                          modifica el mensaje del ultimo commit
 
+git show <hash-commit>                                  muestra el contenido del commit
+git show <hash-commit>:<nombre-archivo>                 muestra el archivo en ese punto de la historia del commit
+git ls-tree <hash-commit>                               muestra el listado de los archivos en ese commit en especial
+
 git branch                                              
                                                         muestra todos los branches de tu repositorio y en cual estas apuntando
 git branch -v                                           

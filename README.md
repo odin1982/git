@@ -46,6 +46,22 @@ letra Q -> salir
 > git commit -m "<mensaje>"
 ´´´
 
+## moviendo archivos
+En este caso se usa para renombrar el archivo
+git mv <archivo1> <archivo2>
+git commit -m "<mensaje>"
+
+o la otra puede ser usando el shell pero aqui debes de mandar a staging el archivo eliminado y el archivo creado
+
+mv <archivo1> <archivo2>
+git add <archivo1>
+git add <archivo2>
+git commit -m "<mensaje>"
+
+## sacando archivos de staging
+git restore --staged <filename..>
+git restore --staged .          --> saca todo de staging
+
 
 
 
