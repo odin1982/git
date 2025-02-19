@@ -62,10 +62,16 @@ git commit -m "<mensaje>"
 git restore --staged <filename..>
 git restore --staged .          --> saca todo de staging
 
+## viendo nuestros cambios
+Te muestra los cambios que existen entre lo que ya le hiciste commit y el area de staging
+git diff --cached                 
 
+Te muestra los cambios que existen entre tu directorio y el area de staging
+git diff
 
-
-
+## Videos para repasar
+Video 24. Ignorando archivos ya agregados
+Video 25
 
 
 

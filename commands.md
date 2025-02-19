@@ -75,8 +75,9 @@ git branch -D <branch-name>                             forza git a borrar un br
 git branch -m <new-branch-name>                         renombra tu branch, debes estar en el branch a modificar
 
 git merge <branch>                                      hace merge con el branch donde estas ubicado
-git diff                                                mostrara todos los cambios en nuestro directorio de trabajo que no estan 
-                                                        preparados para la proxima confirmacion
+git diff                                                
+                                                        mostrara todos los cambios en nuestro directorio de trabajo que no estan preparados para la proxima confirmacion, o la diferencia entre nuestro directorio de trabajo y la de staging
+                                                        
 git diff HEAD
 git diff --staged                                       muestra los cambios entre el staging area y nuestro ultimo commit
 gii diff --cached                                       hace lo mismo que git diff --staged
