@@ -4,6 +4,8 @@ git config --global user.name                           informa el nombre de usu
 git config --global user.name "odin"                    setea tu nombre de ususario en git
 git config --global user.email                          informa el email que git tiene configurado
 git config --global user.email odin@gmail.com           setea el email para git
+git config --global diff.tool vscode                    
+                                                        agrega a visual studio code como herramienta para revisar diferencias
 
 git status                                              da información del repositorio y su contenido
 git init                                                crea un repositorio git nuevo
@@ -17,6 +19,20 @@ git commit -a -m "<commit-message>"                     Añade todos los archivo
 git log                                                 muestra todos los commits del repo
 git log --abbrev-commit                                 te muestra los commits con el hash abreviado
 git log --oneline                                       te muestra los commits abreviados
+git log --stat                                          
+                                                        Nos indica cuales son los archivos que cambiaron y cuantas fueron las inserciones o en caso de quitar codigo
+                                                        nos va indicar cuantas lineas se removieron
+
+git log --oneline -<numero de commits>                  te muestra los ultimos <numero de commits> commits
+git log --oneline --author="<nombre-author>"            te muestra los commits del author <nombre-author>
+git log --oneline --after="<fecha>"                     te muestra los commits despues de la fecha(2023-10-01) capturada
+git log --oneline --before="<fecha>"                    te muestra los commits antes de la fecha(2023-10-01) capturada
+git log --oneline -S"<palabra a buscar>"                te muestra commit donde se encuentra esa palabra y fue modificado tu codigo
+git log --oneline -S"<palabra a buscar>" --patch        
+                                                        te muestra commit donde se encuentra esa palabra y fue modificado tu codigo y las lineas de codigo
+git log --oneline -S"<palabra a buscar>" --stat         
+                                                        te muestra commit donde se encuentra esa palabra y fue modificado tu codigo y te muestra solo los archivos
+
 git commit --amend "<message>"                          modifica el mensaje del ultimo commit
 
 git show <hash-commit>                                  muestra el contenido del commit

@@ -69,9 +69,20 @@ git diff --cached
 Te muestra los cambios que existen entre tu directorio y el area de staging
 git diff
 
+## difftool
+Como configurar difftool con VsCode ver video 26
+
+>git difftool                           --> checa diferencias entre staging y directorio
+>git difftool --staged                  --> checa diferencias entre repo y staging
+
+## Explorando historial
+
+
+
 ## Videos para repasar
 Video 24. Ignorando archivos ya agregados
 Video 25
+video 26
 
 
 
