@@ -269,4 +269,15 @@ ubicacion:
 
 Ubicacion del archivo gitconfig:
 > nano ~/.gitconfig 
+
+Ejemplo: Se agregara el siguiente comando como alias
+´´´
+git log --oneline --graph
+´´´
+agregar esta instruccion:
+´´´
+git config --global alias.gl "log --oneline --graph"
+´´´
+
+
  
