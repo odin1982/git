@@ -31,7 +31,17 @@ git log --oneline -S"<palabra a buscar>"                te muestra commit donde 
 git log --oneline -S"<palabra a buscar>" --patch        
                                                         te muestra commit donde se encuentra esa palabra y fue modificado tu codigo y las lineas de codigo
 git log --oneline -S"<palabra a buscar>" --stat         
-                                                        te muestra commit donde se encuentra esa palabra y fue modificado tu codigo y te muestra solo los archivos
+                                                        te muestra commit donde se encuentra esa palabra y fue modificado tu codigo y te muestra solo los archivos que cambiaron
+
+git log --oneline --grep="<mensaje>"                    
+                                                        Buscar commit por mensaje, es casesensitive grep
+
+git log --oneline <hashCommitOld>..<hashCommitNew>      
+                                                        Si queremos buscar por rango de commits de un commit a otro se pone el mas viejo y despues el mas nuevo
+
+git log --oneline -- <nombreArchivo>                    
+                                                        Muestra todos los commits que cambiaron un archivo en especifico                                        
+
 
 git commit --amend "<message>"                          modifica el mensaje del ultimo commit
 
