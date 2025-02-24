@@ -75,7 +75,7 @@ Como configurar difftool con VsCode ver video 26
 >git difftool                           --> checa diferencias entre staging y directorio
 >git difftool --staged                  --> checa diferencias entre repo y staging
 
-## Explorando historial
+
 
 
 
@@ -279,5 +279,6 @@ agregar esta instruccion:
 git config --global alias.gl "log --oneline --graph"
 ´´´
 
+## git show
 
  

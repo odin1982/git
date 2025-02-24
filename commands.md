@@ -47,6 +47,10 @@ git commit --amend "<message>"                          modifica el mensaje del 
 
 git show <hash-commit>                                  muestra el contenido del commit
 git show <hash-commit>:<nombre-archivo>                 muestra el archivo en ese punto de la historia del commit
+git show HEAD~<numero>                                  te muestra los cambios <numeros> hacia tras de HEAD
+git show HEAD~<numero>:<nombre-archivo>                 te muestra el archivo en el commit <numero> hacia atras del HEAD
+git show HEAD~<numero> --name-status                    te muestra el nombre de los archivos que solo fueron modificados en ese commit
+git show HEAD~<numero> --name-only                      te muestra solo y unicamente el nombre de los archivos que solo fueron modificados en ese commit
 git ls-tree <hash-commit>                               muestra el listado de los archivos en ese commit en especial
 
 git branch                                              
