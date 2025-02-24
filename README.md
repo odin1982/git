@@ -279,6 +279,5 @@ agregar esta instruccion:
 git config --global alias.gl "log --oneline --graph"
 ´´´
 
-## git show
 
  

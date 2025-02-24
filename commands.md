@@ -77,6 +77,7 @@ git checkout HEAD~<numero>                              te coloca <numero> commi
 
 git checkout HEAD <file..> OR
 git checkout -- <file..>  OR
+
 git restore <file>                                
                                                         descarta cualquier cambio que hayas hecho en el el archivo y lo regresa a como estaba en el HEAD
 
@@ -114,7 +115,8 @@ gii diff --cached                                       hace lo mismo que git di
 git diff HEAD <file-name> <filename> ...                muestra los cambios de un archivo o mas  con el HEAD
 git diff --staged <file-name> <filename> ...            muestra los cambios de un archivo o mas con el STAGING AREA
 git diff <branch1> <branch2>                            muetsra cambios entre branches
-git diff <commit-1> <commit-2>                          muestra cambios entre commits
+git diff <commit-old> <commit-new>                      muestra cambios entre commits
+git diff <commit-old> <commit-new> <filename>           muestra cambios entre commits de un archivo
 
 git stash                                               salva tus cambios que aun no le has hecho commit
 git stash pop                                           recupera los cambios de tu stash
@@ -144,3 +146,8 @@ git fetch <remote> <baranch>
                                                         recupera un branch remoto en especifico
 git pulll <remote> <branch>
                                                         recupera la ultima informacion del repositorio y hace merge con los cambios de tu repo local
+
+git shortlog                                            muestra quienes contribuyeron en cada uno de los commits
+git shortlog -n                                         muestra quienes contribuyeron en cada uno de los commits, por cantidad de commits
+git shortlog -s                                         
+                                                        muestra quienes contribuyeron en cada uno de los commits ,solo muestra el nombre y la cantidad de commits
