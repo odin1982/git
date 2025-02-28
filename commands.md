@@ -151,3 +151,8 @@ git shortlog                                            muestra quienes contribu
 git shortlog -n                                         muestra quienes contribuyeron en cada uno de los commits, por cantidad de commits
 git shortlog -s                                         
                                                         muestra quienes contribuyeron en cada uno de los commits ,solo muestra el nombre y la cantidad de commits
+
+git blame <filename>                                    muestra linea por linea quien modifico el archivo 
+git blame -e <filename>                                 muestra linea por linea quien modifico el archivo, con la diferencia de que muestra el correo en lugar del nombre
+git blame -e -L <beginLine>,<endLine> <filename>        Muestra solo las lineas que le especificas para ver quien modifico el archivo, con la diferencia de que muestra el correo en lugar del nombre
+

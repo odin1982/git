@@ -279,5 +279,38 @@ agregar esta instruccion:
 git config --global alias.gl "log --oneline --graph"
 ´´´
 
+## Encontrando el autor de una linea (git blame)
+Te muestra linea por linea quien lo modifico
+
+´´´
+git blame <filename>
+´´´
+
+´´´
+4d9b8c88 (Nicolas Schurmann 2023-10-02 11:56:26 +1300  1) FUNCIONALIDADES
+´´´
+
+Muestra linea por linea quien modifico el archivo, con la diferencia de que muestra el correo en lugar del nombre
+´´´
+git blame -e <filename>
+´´´
+
+´´´
+4d9b8c88 (<nicolas@holamundo.io> 2023-10-02 11:56:26 +1300  1) FUNCIONALIDADES
+´´´
+
+Muestra solo las lineas que le especificas quien modifico el archivo, con la diferencia de que muestra el correo en lugar del nombre
+
+´´´
+git blame -e -L 4,8 <filename>
+´´´
+
+´´´
+e15a3fb9 (<nicolas@holamundo.io> 2023-10-02 11:46:35 +1300 4)
+e15a3fb9 (<nicolas@holamundo.io> 2023-10-02 11:46:35 +1300 5) - Listar
+e15a3fb9 (<nicolas@holamundo.io> 2023-10-02 11:46:35 +1300 6) - Agregar
+a14a3449 (<nicolas@holamundo.io> 2023-10-02 11:48:44 +1300 7) - Marcar como terminada
+eccf13ef (<nicolas@holamundo.io> 2023-10-02 11:49:10 +1300 8) - Notificar al usuario sobre la tarea en determinada fecha
+´´´
 
  
