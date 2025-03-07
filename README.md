@@ -313,4 +313,24 @@ a14a3449 (<nicolas@holamundo.io> 2023-10-02 11:48:44 +1300 7) - Marcar como term
 eccf13ef (<nicolas@holamundo.io> 2023-10-02 11:49:10 +1300 8) - Notificar al usuario sobre la tarea en determinada fecha
 ´´´
 
+# Etiquetas para versionado
+git tag <labelName> <hash-commit>               Crea una etiqueta
+git tag                                         Muestra etiquetas
+git tag -a <tag> -m "<message>"                 Crea una etiqueta con descripcion
+git tag -n                                      Te muestra los tag y su descripcion
+git checkout <labelName>                        navegar entre etiquetas o posicionarte donde se encuentra esta etiqueta
+git show <labelName>                            muestra el contenido de la etiqueta
+
+# Encontrando bugs con bisect
+
+## Seccion 4: Gestion de ramas
+### Que son las ramas?
+        Copia de un proyecto sin alterar el proyecto estable
+
+### gestion de ramas
+
+
+
+
+
  

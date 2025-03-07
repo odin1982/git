@@ -53,16 +53,16 @@ git show HEAD~<numero> --name-status                    te muestra el nombre de 
 git show HEAD~<numero> --name-only                      te muestra solo y unicamente el nombre de los archivos que solo fueron modificados en ese commit
 git ls-tree <hash-commit>                               muestra el listado de los archivos en ese commit en especial
 
-git branch                                              
-                                                        muestra todos los branches de tu repositorio y en cual estas apuntando
-git branch -v                                           
-                                                        muestra todos los branches incluyendo sha1 y el ultimo commit
+git branch                                              muestra todos los branches de tu repositorio y en cual estas apuntando
+git branch -v                                           muestra todos los branches incluyendo sha1 y el ultimo commit
 git branch -r                                           muestra los branches remotos
+git branch <branch-name>                                crea una nueva rama
+git branch -d <branch-name>                             borra un branch
+git branch -D <branch-name>                             forza git a borrar un branch
+git branch -m <new-branch-name>                         renombra tu branch, debes estar en el branch a modificar
 
-git branch <branch-name>                                crea un nuevo branch
 
 git switch <branch-name>                                te cambia a otro repositorio
-
 git switch -c <branch-name>                             crea una nueva rama y te posiciona en esa rama
 
 git checkout <branch-name>                              
@@ -101,9 +101,7 @@ git commit -a -m "<commit-message>"
 git commit -am "<commit-message>"                       
                                                         Añade todos los archivos a la area de stage y crea commit
 
-git branch -d <branch-name>                             borra un branch
-git branch -D <branch-name>                             forza git a borrar un branch
-git branch -m <new-branch-name>                         renombra tu branch, debes estar en el branch a modificar
+
 
 git merge <branch>                                      hace merge con el branch donde estas ubicado
 git diff                                                
@@ -154,5 +152,15 @@ git shortlog -s
 
 git blame <filename>                                    muestra linea por linea quien modifico el archivo 
 git blame -e <filename>                                 muestra linea por linea quien modifico el archivo, con la diferencia de que muestra el correo en lugar del nombre
-git blame -e -L <beginLine>,<endLine> <filename>        Muestra solo las lineas que le especificas para ver quien modifico el archivo, con la diferencia de que muestra el correo en lugar del nombre
+
+git blame -e -L <beginLine>,<endLine> <filename>        
+                                                        Muestra solo las lineas que le especificas para ver quien modifico el archivo, con la diferencia de que muestra el correo en lugar del nombre
+
+git tag <labelName> <hash-commit>                       Crea una etiqueta
+git tag                                                 Muestra etiquetas
+git tag -a <tag> -m "<message>"                         Crea una etiqueta con descripcion
+git tag -n                                              Te muestra los tag y su descripcion
+git checkout <labelName>                                navegar entre etiquetas o posicionarte donde se encuentra esta etiqueta
+git show <labelName>                                    muestra el contenido de la etiqueta
+
 
