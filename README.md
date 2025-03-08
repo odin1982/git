@@ -34,17 +34,17 @@ letra Q -> salir
 
 ## Eliminando archivos en git
 * Con comando del shell o terminal
-´´´
+```
 > rm <archivo>
 > git add
 > git commit -m "<mensaje>"
-´´´
+```
 
 * Con instruccion de git (te ahorras el git add)
-´´´
+```
 > rm <archivo>
 > git commit -m "<mensaje>"
-´´´
+```
 
 ## moviendo archivos
 En este caso se usa para renombrar el archivo
@@ -271,47 +271,47 @@ Ubicacion del archivo gitconfig:
 > nano ~/.gitconfig 
 
 Ejemplo: Se agregara el siguiente comando como alias
-´´´
+```
 git log --oneline --graph
-´´´
+```
 agregar esta instruccion:
-´´´
+```
 git config --global alias.gl "log --oneline --graph"
-´´´
+```
 
 ## Encontrando el autor de una linea (git blame)
 Te muestra linea por linea quien lo modifico
 
-´´´
+```
 git blame <filename>
-´´´
+```
 
-´´´
+```
 4d9b8c88 (Nicolas Schurmann 2023-10-02 11:56:26 +1300  1) FUNCIONALIDADES
-´´´
+```
 
 Muestra linea por linea quien modifico el archivo, con la diferencia de que muestra el correo en lugar del nombre
-´´´
+```
 git blame -e <filename>
-´´´
+```
 
-´´´
+```
 4d9b8c88 (<nicolas@holamundo.io> 2023-10-02 11:56:26 +1300  1) FUNCIONALIDADES
-´´´
+```
 
 Muestra solo las lineas que le especificas quien modifico el archivo, con la diferencia de que muestra el correo en lugar del nombre
 
-´´´
+```
 git blame -e -L 4,8 <filename>
-´´´
+```
 
-´´´
+```
 e15a3fb9 (<nicolas@holamundo.io> 2023-10-02 11:46:35 +1300 4)
 e15a3fb9 (<nicolas@holamundo.io> 2023-10-02 11:46:35 +1300 5) - Listar
 e15a3fb9 (<nicolas@holamundo.io> 2023-10-02 11:46:35 +1300 6) - Agregar
 a14a3449 (<nicolas@holamundo.io> 2023-10-02 11:48:44 +1300 7) - Marcar como terminada
 eccf13ef (<nicolas@holamundo.io> 2023-10-02 11:49:10 +1300 8) - Notificar al usuario sobre la tarea en determinada fecha
-´´´
+```
 
 # Etiquetas para versionado
 git tag <labelName> <hash-commit>               Crea una etiqueta
@@ -329,8 +329,32 @@ git show <labelName>                            muestra el contenido de la etiqu
 
 ### gestion de ramas
 
+### comparando ramas
+Para ver la cantidad de commits que distan entre una rama y otra:
+
+```
+$ git log main..feature/carro-de-compra
+```
+
+![Descripción de la imagen](/images/Screenshot_1.png)
+
+Como saber los cambios que se han realizado entre ramas
+
+```
+git diff main feature/carro-de-compra
+```
+![Descripción de la imagen](/images/Screenshot_2.png)
 
 
+Si solo quieres ver la diferencia sin agregar las dos ramas, por lo general nos posicionamos en la rama que vamos a mergear
+
+```
+git diff main
+```
+![Descripción de la imagen](/images/Screenshot_3.png)
 
 
- 
+Para ver solo los nombre de los archivos donde hay diferencia
+```
+git diff --name-only main
+``` 
