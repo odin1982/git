@@ -358,3 +358,4 @@ Para ver solo los nombre de los archivos donde hay diferencia
 ```
 git diff --name-only main
 ``` 
+![Descripción de la imagen](/images/Screenshot_4.png)
