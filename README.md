@@ -359,3 +359,67 @@ Para ver solo los nombre de los archivos donde hay diferencia
 git diff --name-only main
 ``` 
 ![Descripción de la imagen](/images/Screenshot_4.png)
+
+### stash
+cuando nos cambiamos de rama lo que hace git es restaurar los archivos a la rama que nos estamos cambiando pero si tenemos algun cambio de un archivo que le estemos dando seguimiento en la rama y queremos cambiarnos git no nos dejara, primero tendrias que hacer commit, pero si aun no necesitas realizar el commit puedes agregar esos cambios al stash
+
+![Descripción de la imagen](/images/Screenshot_5.png)
+
+![Descripción de la imagen](/images/Screenshot_6.png)
+
+Agregaremos los archivos al stash
+```
+git stash push -m "Agregando archivos al stash"
+```
+![Descripción de la imagen](/images/Screenshot_7.png)
+
+Para mostrar los stash guardados
+```
+git stash list
+```
+![Descripción de la imagen](/images/Screenshot_8.png)
+
+Los archivos nuevos no se agregan al stash y si quieres agrergarlos debes usar la siguiente instruccion
+
+```
+git stash -am "<mensaje>"
+git stash --all -m "<mensaje>"
+git stash -a -m "<mensaje>"
+```
+
+![Descripción de la imagen](/images/Screenshot_9.png)
+
+Para ver un stash
+
+```
+git stash show stash{1}
+git stash show 1
+```
+![Descripción de la imagen](/images/Screenshot_11.png)
+
+Para aplicar un stash
+
+```
+git stash apply 1
+git stash apply stash{1}
+```
+![Descripción de la imagen](/images/Screenshot_10.png)
+
+Borrar stash de forma individual
+
+```
+git stash drop 1
+git stash drop stash{1}
+```
+
+Borrar todos los stash
+
+```
+git stash clear
+```
+Ejecutar el ultimo stash y despues lo elimina
+```
+git stash pop
+```
+
+
