@@ -103,7 +103,9 @@ git commit -am "<commit-message>"
 
 
 
-git merge <branch>                                      hace merge con el branch donde estas ubicado
+git merge <branch>                                      hace merge con el <branch> donde estas ubicado
+git merge --no-ff <branch>                              hace merge con el <branch> donde estas ubicado y te solicita que agregues el mensaje
+
 git diff                                                
                                                         mostrara todos los cambios en nuestro directorio de trabajo que no estan preparados para la proxima confirmacion, o la diferencia entre nuestro directorio de trabajo y la de staging
                                                         
@@ -162,5 +164,10 @@ git tag -a <tag> -m "<message>"                         Crea una etiqueta con de
 git tag -n                                              Te muestra los tag y su descripcion
 git checkout <labelName>                                navegar entre etiquetas o posicionarte donde se encuentra esta etiqueta
 git show <labelName>                                    muestra el contenido de la etiqueta
+
+
+git revert <hash-commit>                                revierte al commit especificado
+git rever -m <1 o 2> <hash-commit>                      
+                                                        se usa solo si el commit esta precedido de un merge si se escoge opcion 1 se revierte el commit de la misma rama donde te encuentras y 2 se revierte el commit de la otra rama
 
 

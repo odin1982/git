@@ -422,4 +422,40 @@ Ejecutar el ultimo stash y despues lo elimina
 git stash pop
 ```
 
+## tipos de merge
+
+- Fast forward merge
+- 3-way merge
+
+## conflictos
+- Se cambia una linea en una rama pero esta misma linea se cambia en la otra rama
+- cuando agregamos un archivo y este tambien se agrega en la otra rama con el mismo nombre pero su contenido es distinto
+- cuando cambiamos un archivo pero en la otra rama se elimina
+
+## revertir commit
+A veces cuando estamos realizando merge sobre todo sobre la rama main puede ser que incluyamos algun error puede ser que no resolvimos los conflictos
+de la manera adecuada o simplemente incluia un error lo que podemos hacer es anular o revertir los cambios de ese merge commit o tambien de un commit 
+en especifico.
+
+Ejemplo:
+![Descripción de la imagen](/images/Screenshot_12.png)
+
+Si nosotros ejecutamos la instruccion:
+```
+git revert HEAD
+```
+nos dara un error porque queremos revertir un commit que esta precedido de dos padres, si solo fuera un padre no habria problema:
+
+![Descripción de la imagen](/images/Screenshot_13.png)
+![Descripción de la imagen](/images/Screenshot_14.png)
+
+Por lo tanto debemos ejecutar la siguiente instruccion:
+
+```
+git revert -m 1 HEAD
+```
+1 = si es un padre de la misma rama
+2 =  si es el padre pero de la otra rama
+
+
 
