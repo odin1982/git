@@ -458,4 +458,13 @@ git revert -m 1 HEAD
 2 =  si es el padre pero de la otra rama
 
 
+# Archivos de otras ramas
+Si quieres tener la version de un archivo de otra rama puedes usar la siguiente instruccion, ubicado en la rama que se quiere hacer el cambio
+
+```
+git restore --source=<name-branch> -- <filename>
+```
+
+
+
 
