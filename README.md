@@ -469,4 +469,6 @@ git restore --source=<name-branch> -- <filename>
 Este comando sirve para tomar cualquier commit  de cualquier rama e integrarla o mergearla a tu rama actual
 ![Descripción de la imagen](/images/cherry-pick_1.png)
 
-
+```
+git cherry-pick 14fb2d3
+```
