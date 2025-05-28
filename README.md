@@ -470,5 +470,19 @@ Este comando sirve para tomar cualquier commit  de cualquier rama e integrarla o
 ![Descripción de la imagen](/images/cherry-pick_1.png)
 
 ```
+git cherry-pick <hash-short-commit>
 git cherry-pick 14fb2d3
+```
+
+## git rebase
+ en Git es un comando que permite reescribir el historial de una rama. En esencia, se usa para integrar cambios de una rama en otra, pero de una forma que crea un historial de commits lineal y limpio, a diferencia del merge que crea una nueva confirmación de fusión
+
+ ![Descripción de la imagen](/images/rebase_1.png)
+
+ ![Descripción de la imagen](/images/rebase_2.png)
+
+ Solo se debe hacer si un solo desarrollador esta desarrollando sobre una rama
+
+ ```
+git rebase <branch-name>
 ```
