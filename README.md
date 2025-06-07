@@ -4,7 +4,3 @@
 
 ##### Staging Area
     Esta area nos sirve para darle seguimiento a nuestros archivos, si trabajaramos unicamente en el working area cualquier modificacion GIT no lo tendria a la vista.
-
-
-
-  
