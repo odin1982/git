@@ -20,5 +20,13 @@
 ```
 ![Descripción de la imagen](/images/git_add.png)
 
+## Regresar un archivo de staging area a working directory
+
+```
+git rm --cached <file> ...
+```
+
+![Descripción de la imagen](/images/git_rm_cached.png)
+
 
 
