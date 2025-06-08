@@ -13,5 +13,12 @@
 ```    
 ![Descripción de la imagen](/images/git_init.png)
 
+## git add
+    Adding a file in a staging area
+```
+> git add hello.c
+```
+![Descripción de la imagen](/images/git_add.png)
+
 
 
