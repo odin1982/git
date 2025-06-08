@@ -4,3 +4,14 @@
 
 ##### Staging Area
     Esta area nos sirve para darle seguimiento a nuestros archivos, si trabajaramos unicamente en el working area cualquier modificacion GIT no lo tendria a la vista.
+
+## git init
+    Instruccion para crear un repositorio git
+
+```
+> git init
+```    
+![Descripción de la imagen](/images/git_init.png)
+
+
+
