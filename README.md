@@ -35,5 +35,13 @@ Este comando lista todos los archivos que están en el índice (staging area) y 
 git ls-files
 ```
 
+## git log
+Muestra la historia de los commits en el repositorio
+
+```
+git log
+```
+![Descripción de la imagen](/images/git_log.png)
+
 
 
