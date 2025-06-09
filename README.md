@@ -43,5 +43,13 @@ git log
 ```
 ![Descripción de la imagen](/images/git_log.png)
 
+## linux
+### cat
+Comando para editar un archivo
+
+```
+cat >> <filename>
+```
+Para salir das un  ENTER y en una nueva linea presionas CONTROL + D
 
 
