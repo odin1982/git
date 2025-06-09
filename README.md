@@ -28,5 +28,12 @@ git rm --cached <file> ...
 
 ![Descripción de la imagen](/images/git_rm_cached.png)
 
+## Comando para ver archivos en el staging area
+Este comando lista todos los archivos que están en el índice (staging area) y ya están siendo rastreados por Git.
+
+```
+git ls-files
+```
+
 
 
