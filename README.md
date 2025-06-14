@@ -43,6 +43,42 @@ git log
 ```
 ![Descripción de la imagen](/images/git_log.png)
 
+
+## Configurar git
+```
+git config --global user.name "<username>"
+
+git config --global user.email "<email>"
+```
+
+Lista las configuraciones globales de git
+```
+git config --global -l
+```
+
+## tipos de git reset (hard - soft - mixed)
+### git reset mixed
+Actualiza tu Staging area al commit solicitado
+1 - Se muestran los commits
+2 - Se muestra el estatus del repositorio
+3 - Se muestra el contenido original del archivo a modificar en este caso hello.py
+4 - Se muestra el contendio de hello.py en la version o commit que lo queremos dejar
+5 - Hacemos el git reset mixed esto hara que solo se vea modificado el archivo en el staging area y no en nuestro Working Directory(WIP)
+6 - Mostramos como se ve el estatus de nuestro repositorio
+7 - Comprobamos que nuestro archivo hello.py no a sufrido modificacion en el WIP
+8 - Para dejar el archivo hello.py tal cual como en nuestro Staging Area ejecutamos el comando git checkout
+9 - Comprobamos que ya ha sido modificado nuestro archivo hello.py tal cual como esta en el staging area
+ 
+![Descripción de la imagen](/images/git_reset_mixed_001.png)
+
+
+
+## Como puedo remover un archivo del area de commit?
+
+
+
+
+
 ## linux
 ### cat
 Comando para editar un archivo
@@ -51,5 +87,13 @@ Comando para editar un archivo
 cat >> <filename>
 ```
 Para salir das un  ENTER y en una nueva linea presionas CONTROL + D
+
+
+
+##notas
+cd /mnt/c/Users/odina/Documents/odin/programacion/git/mastering-git-github-from-basics-to-advanced-workflows
+
+
+
 
 
