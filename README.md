@@ -9,9 +9,15 @@
     Instruccion para crear un repositorio git
 
 ```
-> git init
+git init
 ```    
 ![Descripción de la imagen](/images/git_init.png)
+
+
+Crea una carpeta con el nombre del proyecto y inicializa un proyecto git
+```
+git init <name project>
+``` 
 
 ## git add
     Adding a file in a staging area
@@ -56,6 +62,12 @@ Lista las configuraciones globales de git
 git config --global -l
 ```
 
+Lista la ubicacion del archivo de configuracion de git
+```
+git config --list --show-origin
+```
+
+
 ## tipos de git reset (hard - soft - mixed)
 ### git reset mixed
 Actualiza tu Staging area al commit solicitado
@@ -73,11 +85,18 @@ Actualiza tu Staging area al commit solicitado
 
 
 
-## Como puedo remover un archivo del area de commit?
+## git alias
+Son shortcuts 
+```
+git config --global alias.<nombre-alias> "<comando>"
+git config --global alias.mihistorial "git log --oneline"
+```
 
-
-
-
+## git cat-file -p <hash-commit>
+```
+git cat-file -p <hash-commit>
+```
+![Descripción de la imagen](/images/git_cat-file.png)
 
 ## linux
 ### cat
@@ -88,6 +107,18 @@ cat >> <filename>
 ```
 Para salir das un  ENTER y en una nueva linea presionas CONTROL + D
 
+
+### touch
+Comando para crear archivos
+```
+touch <filename>.<extension>...
+```
+
+### history
+Muestra todo el historial de los comandos que has ejecutado
+```
+history
+```
 
 
 ##notas
