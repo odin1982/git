@@ -93,10 +93,52 @@ git config --global alias.mihistorial "git log --oneline"
 ```
 
 ## git cat-file -p <hash-commit>
+Sirve para ver el contenido de un commit
 ```
 git cat-file -p <hash-commit>
 ```
 ![Descripción de la imagen](/images/git_cat-file.png)
+
+
+## markdown cheatsheet
+[link markdown sheet](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet)
+
+## Donde se encuentra el archivo .ssh en windows o ubuntu
+C:\Users\<nombre de usuario>\.ssh
+
+/home/nombre_de_usuario/.ssh/
+/home/v1k1ngg0d/.ssh
+ls -al ~/.ssh
+
+![private key and pucblic key](/images/git%20ssh%20file.png)
+
+
+## Modificar el mensaje del ultimo commit
+```
+git commit --amend -m "<message>"
+```
+
+## reflog
+Este comando te muestra TODO el historial de lo que has hecho en tu repositorio
+
+## merge
+Haremos merge de dev1 a master branch
+
+![private key and pucblic key](/images/git_merge_1.png)
+
+Hacemos el merge de dev1 en master y se muestra asi nuestro log
+
+![private key and pucblic key](/images/git_merge_2.png)
+Lo que muestra la imagen es que en ocasiones hay muchos commits sin sentido o se hace muy extenso el historial de la rama master de commits basura y sera dificil al momento de administrar la rama master una alternativa para evitar esto es hacer un "squash merge"
+
+## git squash merge
+![private key and pucblic key](/images/git_merge_squash.png)
+
+
+
+
+
+
 
 ## linux
 ### cat
@@ -120,8 +162,21 @@ Muestra todo el historial de los comandos que has ejecutado
 history
 ```
 
+### copiar el conteniddo de una carpeta en otra
+```
+cp -r <carpeta a copiar>/ <carpeta destino>/  
+```
 
-##notas
+# avance
+9 21:47
+
+
+## temas a estudiar a profundidad 
+- reflog(reachable commits and orphaned commits)
+
+
+
+## notas
 cd /mnt/c/Users/odina/Documents/odin/programacion/git/mastering-git-github-from-basics-to-advanced-workflows
 
 
